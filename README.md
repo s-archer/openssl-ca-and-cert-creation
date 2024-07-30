@@ -1,6 +1,6 @@
 # Using the script
 
-The script `create-cert.sh` has a pre-requisite that you must first create a CA using the three commands in the `Create a CA` section below.  The commands will create your CA cert and key inside the `./ca` folder.
+The script `create-cert.sh` has a pre-requisite that you must first create a CA using the three commands in the [Create a CA](# Create a CA)section below.  The commands will create your CA cert and key inside the `./ca` folder.
 
 One you have created your CA, you can use the script to create certificates and keys signed by your CA.
 
