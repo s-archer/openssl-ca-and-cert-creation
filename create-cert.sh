@@ -2,9 +2,9 @@
 
 #-----------------------------------------------------#
 # MODIFY PARAMETERS ----------------------------------# 
-cn="sentence.archf5.com/emailAddress=arch@f5.com"
-alt1="sentence-alt.archf5.com"
-shortname="sentence"
+cn="host.example.com/emailAddress=arch@example.com"
+alt1="sni1.example.com"
+shortname="example"
 # set null if not using a passphrase (passphrase="") 
 passphrase=""
 #-----------------------------------------------------#
@@ -32,7 +32,7 @@ req_extensions              = req_ext
 countryName                 = GB
 stateOrProvinceName         = London
 localityName                = London
-organizationName            = F5
+organizationName            = Example
 commonName                  = ${cn}
 [ req_ext ]
 extendedKeyUsage            = clientAuth, serverAuth
