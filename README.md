@@ -6,7 +6,7 @@ One you have created your CA, you can use the script to create certificates and 
 
 Before running the script, make sure to update the parameters `cn` (the CN for certificate you create ), `alt1` (additional SAN for your cert) and `shortname` (this is primarily used to create a subfolder iside which the new certs/keys are created).
 
-Note that most of the addiional steps in the [Create a Client Cert signed by the CA](#Create-a-Client-Cert-signed-by-the-CA) and the additional optional steps are iuncluded in the script, so mainly here for information.
+Note that most of the steps in the [Create a Client Cert signed by the CA](#Create-a-Client-Cert-signed-by-the-CA) and the additional optional steps are iuncluded in the script, so mainly here for information.
 
 # Create a CA
 
