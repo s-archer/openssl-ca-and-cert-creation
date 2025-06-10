@@ -85,3 +85,9 @@ openssl base64 -e -A -in ./ca/client-ca.crt -out ./${shortname}/${shortname}-CA.
 
 
 echo "To test use: curl -k -v  --resolve ${cn}:443:< * IP * > https://${cn}/ --cacert ./ca/client-ca.crt --key ./${shortname}/${shortname}.key --cert ./${shortname}/${shortname}.crt"
+
+# # Blinfold the private key using vesctl - uncomment below
+# echo "Using VESCTL to BLINDFOLD the pem key"
+# vesctl request secrets get-public-key > demo-api-pubkey
+# vesctl request secrets get-policy-document --namespace shared --name ves-io-allow-volterra > demo-api-policy
+# vesctl request secrets encrypt --policy-document demo-api-policy --public-key demo-api-pubkey ./${shortname}/${shortname}.key | sed -n '2p' | tr -d '\n' > ./${shortname}/${shortname}.key.blindfold
