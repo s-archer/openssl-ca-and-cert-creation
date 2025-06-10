@@ -11,7 +11,7 @@ openssl req -x509 -new -key ./ca/client-ca.key -out ./ca/client-ca.crt -days 825
 
 # Create a Key and Client Cert signed by the CA
 
-The script will perform the folliwng tasks:
+The script [create-cert.sh](./create-cert.sh) will perform the folliwng tasks:
 
 - Create a subfolder named ${shortname} and inside:
 - Create CSR and Key inn PEM format (*.csr and *.key)
