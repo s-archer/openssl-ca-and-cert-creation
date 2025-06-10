@@ -22,6 +22,11 @@ The script [create-cert.sh](./create-cert.sh) will perform the folliwng tasks:
 - For XC - create Base64 encoded versions of the PEMs (*-b64.crt *-b64.key)
 - For XC - create Base64 encoded versions of the CA cert PEM (*-CA.crt)
 
+# Add trusted CA to Apple Trust StoreMore actions
+- Open the CA cert in the keychain
+- Doubleclick the cert to view it
+- Expand the 'Trust' section and select 'Always Trust'
+
 ## Blinfold the private key using vesctl 
 
 The last 4 lines are commented out, but if you want to use the F5 XC vesctl CLI 
